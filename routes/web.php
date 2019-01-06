@@ -11,11 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    app('log')->info('welcome');
-    return view('welcome');
-});
+Route::view('/', 'welcome');
 
-Route::get('/hello', function () {
-    dd('hello');
-});
+Route::get('/podcasts', 'PodcastController@index');
