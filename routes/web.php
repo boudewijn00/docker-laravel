@@ -12,5 +12,10 @@
 */
 
 Route::get('/', function () {
+    app('log')->info('welcome');
     return view('welcome');
+});
+
+Route::get('/hello', function () {
+    dd('hello');
 });
