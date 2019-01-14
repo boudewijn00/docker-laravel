@@ -31,6 +31,6 @@ class ProcessPodcast implements ShouldQueue
     public function handle()
     {
         Log::info('Handling the podcast processing.');
-        throw new \Exception('Podcast processing failed.');
+        //throw new \Exception('Podcast processing failed.');
     }
 }
